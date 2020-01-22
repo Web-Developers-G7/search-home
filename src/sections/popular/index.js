@@ -1,0 +1,1 @@
+// popular places section

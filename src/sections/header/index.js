@@ -14,7 +14,8 @@ import {
   Select,
   Option,
   Header,
-  ContainerBottom
+  ContainerBottom,
+  SearchBtn
 } from "../../components/navbar";
 import logo from "../../images/logo-blue.png";
 
@@ -52,6 +53,7 @@ const HeaderSection = () => {
                 <Option value="london">london</Option>
                 <Option value="newyork">newyork</Option>
               </Select>
+              <SearchBtn>Search</SearchBtn>
             </Form>
           </FormContainer>
         </ContainerBottom>

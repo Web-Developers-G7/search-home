@@ -98,7 +98,22 @@ export const Select = styled.select`
   font-size: 15px;
   height: 45px;
   background: #fff;
-  line-height: 25px;
+  line-height: 30px;
   width: 12%;
+  padding: 10px 0;
 `;
 export const Option = styled.option``;
+
+export const SearchBtn = styled(Button)`
+  padding: 10px 35px;
+  line-height: 1.2;
+  border-radius: 3px;
+  background: #6449e7;
+  border: 1px solid transparent;
+  color: #fff !important;
+  transition: 0.3s;
+  display: inline-block;
+  // font-size: 15px;
+  font-weight: 400;
+  margin: 0;
+`;

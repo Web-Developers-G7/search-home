@@ -82,8 +82,9 @@ export const Input = styled.input`
   height: 45px;
   width: 30%;
   outline: none;
+  border-bottom: 3px solid transparent;
   &:focus {
-    border-bottom: 2px solid green;
+    border-bottom: 3px solid green;
   }
 `;
 export const Select = styled.select`

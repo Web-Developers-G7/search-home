@@ -12,17 +12,6 @@ export const Container = styled.div`
   height: ${props => (props.height ? props.height : "auto")};
 `;
 
-export const HeaderContainer = styled(Container)`
-  background-image: linear-gradient(
-      to right bottom,
-      rgba(200, 200, 200, 0.4),
-      rgba(0, 0, 0, 0.8)
-    ),
-    url(${bgHeader});
-  background-position: bottom;
-  background-size: cover;
-`;
-
 export const Img = styled.img`
   width: 200px;
 `;
@@ -49,4 +38,64 @@ export const Button = styled.button`
 
 export const Title = styled.h1``;
 
-export const MainTitle = styled(Title)``;
+export const MainTitle = styled(Title)`
+  color: #fff;
+  margin-bottom: 10px;
+`;
+
+export const FormContainer = styled(Container)`
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+  display: flex;
+`;
+export const ContainerBottom = styled(Container)`
+  position: absolute;
+  bottom: 100px;
+  width: 90%;
+`;
+export const HeaderContainer = styled(Container)`
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(200, 200, 200, 0.4),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url(${bgHeader});
+  background-position: bottom;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+`;
+
+export const Header = styled.header`
+  padding: 0 30px;
+`;
+export const Form = styled.form`
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+`;
+export const Input = styled.input`
+  padding: 4px 15px 0 45px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  height: 45px;
+  width: 30%;
+  outline: none;
+  &:focus {
+    border-bottom: 2px solid green;
+  }
+`;
+export const Select = styled.select`
+  position: relative;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  box-shadow: none;
+  outline: none;
+  font-size: 15px;
+  height: 45px;
+  background: #fff;
+  line-height: 25px;
+  width: 12%;
+`;
+export const Option = styled.option``;

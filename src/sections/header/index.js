@@ -7,13 +7,20 @@ import {
   Li,
   Button,
   HeaderContainer,
-  MainTitle
+  MainTitle,
+  FormContainer,
+  Form,
+  Input,
+  Select,
+  Option,
+  Header,
+  ContainerBottom
 } from "../../components/navbar";
 import logo from "../../images/logo-blue.png";
 
-const Header = () => {
+const HeaderSection = () => {
   return (
-    <header>
+    <Header>
       <Nav>
         <Container>
           <Img src={logo} alt="logo-img" />
@@ -27,12 +34,30 @@ const Header = () => {
         <Button>add property</Button>
       </Nav>
       <HeaderContainer height="85vh">
-        <Container>
+        <ContainerBottom>
           <MainTitle>Let Us Guide You Home</MainTitle>
-        </Container>
+          <FormContainer>
+            <Form>
+              <Input
+                type="text"
+                placeholder="Enter Property, Location, Landmark..."
+              />
+              <Select id="select-area">
+                <Option value="">Select Area</Option>
+                <Option value="Gaza">Gaza</Option>
+                <Option value="Khanyounis">Khanyounis</Option>
+              </Select>
+              <Select id="select-city">
+                <Option value="">Select City</Option>
+                <Option value="london">london</Option>
+                <Option value="newyork">newyork</Option>
+              </Select>
+            </Form>
+          </FormContainer>
+        </ContainerBottom>
       </HeaderContainer>
-    </header>
+    </Header>
   );
 };
 
-export default Header;
+export default HeaderSection;

@@ -47,6 +47,7 @@ export const FormContainer = styled(Container)`
   background-color: rgba(255, 255, 255, 0.7);
   padding: 10px;
   display: flex;
+  border-radius: 5px;
 `;
 export const ContainerBottom = styled(Container)`
   position: absolute;
@@ -87,6 +88,7 @@ export const Input = styled.input`
     border-bottom: 3px solid green;
   }
 `;
+
 export const Select = styled.select`
   position: relative;
   border: 1px solid #ddd;

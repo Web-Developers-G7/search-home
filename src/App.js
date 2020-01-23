@@ -5,7 +5,6 @@ import HeaderSection from "./sections/header";
 function App() {
   return (
     <div className="App">
-      search home project
       <HeaderSection />
     </div>
   );

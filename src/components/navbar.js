@@ -14,6 +14,7 @@ export const Container = styled.div`
 
 export const Img = styled.img`
   width: 200px;
+  padding-top: 10px;
 `;
 
 export const Ul = styled.ul`
@@ -69,7 +70,7 @@ export const HeaderContainer = styled(Container)`
 `;
 
 export const Header = styled.header`
-  padding: 0 30px;
+  padding: 0;
 `;
 export const Form = styled.form`
   display: flex;

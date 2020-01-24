@@ -32,15 +32,15 @@ export const Card = ({
   type
 }) => {
   return (
-    <Container>
+    <Container className="container">
       <ImageCard>
         <Image src={source} />
         <P>{type}</P>
       </ImageCard>
       <DetailCard>
         <Place>
-          <Name>{name}</Name>
-          <Location className="icon">
+          <Name className="title">{name}</Name>
+          <Location className="title_icon">
             <Icon type="environment" theme="filled" color="red" />
             <LocationP> {location}</LocationP>
           </Location>

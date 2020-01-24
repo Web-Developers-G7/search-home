@@ -11,7 +11,6 @@ import {
 } from '../../components/popular';
 import { Card } from './card';
 import { Data } from './data';
-import { Button } from 'antd/lib/radio';
 
 class Popular extends Component {
   state = { data: [], status: false, status1: false, status2: false };
@@ -24,15 +23,21 @@ class Popular extends Component {
   }
 
   forAll = () => {
-    if (Data.length >= 3) {
-      const lastData = Data.slice(-3);
-      this.setState({
-        data: lastData,
-        status: true,
-        status1: false,
-        status2: false
-      });
-    }
+    // if (Data.length >= 3) {
+    //   const lastData = Data.slice(-3);
+    //   this.setState({
+    //     data: lastData,
+    //     status: true,
+    //     status1: false,
+    //     status2: false
+    //   });
+    // }
+    this.setState({
+      data: Data,
+      status: true,
+      status1: false,
+      status2: false
+    });
   };
   forSale = () => {
     const forSale = Data.filter(card => card.type === 'For Sale');
@@ -56,7 +61,7 @@ class Popular extends Component {
   render() {
     const { data, status1, status2, status } = this.state;
     return (
-      <Section>
+      <Section className={status ? 'activeAll' : 'notActiveAll'}>
         <SubSection>
           <Title>Find rental properties anywhere</Title>
           <SubTitle>Discover Popular Properties</SubTitle>
@@ -98,7 +103,6 @@ class Popular extends Component {
             ))}
           </CardSection>
         </MainSection>
-        <Button className="browsBtn">Browse More</Button>
       </Section>
     );
   }

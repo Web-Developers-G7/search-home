@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 
 export const Section = styled.section`
-  height: 760px;
+  height: 70%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 20px 0 20px 0;
 `;
 export const SubSection = styled.div`
   height: 20%;
@@ -40,7 +41,7 @@ export const Line = styled.hr`
 `;
 export const CardSection = styled.div`
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   height: 80%;
@@ -73,6 +74,7 @@ export const Span = styled.span`
 export const Container = styled.div`
   width: 30%;
   height: 100%;
+  margin: 10px;
   border: 1px solid white;
   box-shadow: 0 0px 5px rgba(0, 0, 0, 0.05);
   border-radius: 3px;
@@ -107,7 +109,7 @@ export const P = styled.p`
   background-color: #fa6742;
 `;
 export const DetailCard = styled.div`
-  height: 50%;
+  height: 200px;
 `;
 export const Place = styled.div`
   height: 40%;

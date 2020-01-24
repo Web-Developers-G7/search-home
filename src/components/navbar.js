@@ -14,6 +14,7 @@ export const Container = styled.div`
 
 export const Img = styled.img`
   width: 200px;
+  padding-top: 10px;
 `;
 
 export const Ul = styled.ul`
@@ -47,6 +48,7 @@ export const FormContainer = styled(Container)`
   background-color: rgba(255, 255, 255, 0.7);
   padding: 10px;
   display: flex;
+  border-radius: 5px;
 `;
 export const ContainerBottom = styled(Container)`
   position: absolute;
@@ -68,7 +70,7 @@ export const HeaderContainer = styled(Container)`
 `;
 
 export const Header = styled.header`
-  padding: 0 30px;
+  padding: 0;
 `;
 export const Form = styled.form`
   display: flex;
@@ -82,10 +84,12 @@ export const Input = styled.input`
   height: 45px;
   width: 30%;
   outline: none;
+  border-bottom: 3px solid transparent;
   &:focus {
-    border-bottom: 2px solid green;
+    border-bottom: 3px solid green;
   }
 `;
+
 export const Select = styled.select`
   position: relative;
   border: 1px solid #ddd;
@@ -95,7 +99,22 @@ export const Select = styled.select`
   font-size: 15px;
   height: 45px;
   background: #fff;
-  line-height: 25px;
+  line-height: 30px;
   width: 12%;
+  padding: 10px 0;
 `;
 export const Option = styled.option``;
+
+export const SearchBtn = styled(Button)`
+  padding: 10px 35px;
+  line-height: 1.2;
+  border-radius: 3px;
+  background: #6449e7;
+  border: 1px solid transparent;
+  color: #fff !important;
+  transition: 0.3s;
+  display: inline-block;
+  // font-size: 15px;
+  font-weight: 400;
+  margin: 0;
+`;

@@ -48,7 +48,7 @@ export const Card = ({
         <Details className="detailIcon">
           <TopDetail>
             <DetailSpan>
-              <Icon type="bank" theme="filled" />{' '}
+              <Icon type="bank" theme="filled" />
               <DetailSpan>{detail1}</DetailSpan>
             </DetailSpan>
             <DetailSpan>

@@ -1,14 +1,23 @@
 import styled from 'styled-components';
 
 export const Section = styled.section`
-  height: 700px;
+  height: 760px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 export const SubSection = styled.div`
   height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
 `;
 export const Title = styled.p`
   color: #6449e7;
   padding-top: 20px;
+  font-size: 17px;
 `;
 export const SubTitle = styled.p`
   color: #222222;
@@ -18,7 +27,7 @@ export const SubTitle = styled.p`
   font-weight: bold;
 `;
 export const MainSection = styled.div`
-  height: 80%;
+  height: 70%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,6 +40,7 @@ export const Line = styled.hr`
 `;
 export const CardSection = styled.div`
   display: flex;
+  flex-wrap: nowrap;
   justify-content: space-around;
   align-items: center;
   height: 80%;
@@ -52,14 +62,11 @@ export const Span = styled.span`
   width: 100px;
   height: 50px;
   line-height: 50px;
-  margin-top: 10px;
+  margin-top: 4px;
   &:hover {
     color: gray;
     cursor: pointer;
     border-bottom: 1px solid #6449e7;
-  }
-  &:active {
-    color: #6449e7;
   }
 `;
 
@@ -68,11 +75,10 @@ export const Container = styled.div`
   height: 100%;
   border: 1px solid white;
   box-shadow: 0 0px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
 `;
-
 export const ImageCard = styled.div`
   height: 50%;
-  background-color: white;
   position: relative;
   overflow: hidden;
   &:hover {
@@ -86,7 +92,6 @@ export const Image = styled.img`
   opacity: 0.9;
   &:hover {
     transform: scale(1.2);
-    overflow: hidden;
     cursor: pointer;
   }
 `;

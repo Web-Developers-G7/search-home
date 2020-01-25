@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+.title_icon .anticon {
+  color: #6449e7;
+}
+
+.detailIcon .anticon {
+  color: gray;
+}
+
+.rateIcon .anticon {
+  color: #FFC600
+}
+
+.active {
+  color: #6449e7;
+  border-bottom: 1px solid #6449e7;
+}
+
+.notActive {
+  border-bottom: none;
+}
+
+.browsBtn {
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+}
+
+.browsBtn :hover {
+  color: #6449e7
+}
+
+@media only screen and (max-width: 768px) {
+  .title {
+    padding-left: 0 !important;
+    font-size: 16px !important;
+  }
+  .title_icon {
+    padding-left: 0 !important;
+    font-size: 14px !important;
+  }
+  .container {
+    width: 87% !important;
+  }
+}
+
+.ant-carousel .slick-dots-bottom {
+  bottom:-15px;
+}
+
+.slick-dots li button:before {
+  display: none;
+}
+
+.ant-carousel .slick-dots li button {
+  color: gray;
+  background: gray;
+  opacity: 1;
+}
+
+.ant-carousel .slick-dots li.slick-active button {
+  background: #5234e6;
+}

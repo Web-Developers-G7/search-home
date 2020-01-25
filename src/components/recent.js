@@ -4,21 +4,18 @@ export const Section = styled.section`
   height: 70%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 20px 0 20px 0;
+  margin: 20px 0 30px 0;
 `;
 export const SubSection = styled.div`
-  height: 20%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
+  padding-left: 47px;
 `;
 export const Title = styled.span`
   color: #6449e7;
   padding-top: 20px;
   font-size: 17px;
+  text-align: left;
 `;
 export const SubTitle = styled.span`
   color: #222222;
@@ -26,6 +23,7 @@ export const SubTitle = styled.span`
   text-transform: capitalize;
   font-size: 25px;
   font-weight: bold;
+  text-align: left;
 `;
 export const MainSection = styled.div`
   height: 70%;
@@ -40,39 +38,11 @@ export const Line = styled.hr`
   color: #dee2e6;
 `;
 export const CardSection = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
   height: 80%;
   width: 95%;
 `;
-export const MenueSection = styled.div`
-  height: 10%;
-  line-height: 10%;
-  margin-bottom: 10px;
-  width: 92%;
-  text-align: left;
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid #dee2e6;
-`;
-
-export const Span = styled.span`
-  padding-left: 20px;
-  width: 100px;
-  height: 50px;
-  line-height: 50px;
-  margin-top: 4px;
-  &:hover {
-    color: gray;
-    cursor: pointer;
-    border-bottom: 1px solid #6449e7;
-  }
-`;
 
 export const Container = styled.div`
-  width: 30%;
   height: 100%;
   margin: 10px;
   border: 1px solid white;
@@ -92,7 +62,6 @@ export const Image = styled.img`
   height: 100%;
   transition: 1s;
   opacity: 0.9;
-  border-radius: 3px;
   &:hover {
     transform: scale(1.2);
     cursor: pointer;

@@ -23,15 +23,6 @@ class Popular extends Component {
   }
 
   forAll = () => {
-    // if (Data.length >= 3) {
-    //   const lastData = Data.slice(-3);
-    //   this.setState({
-    //     data: lastData,
-    //     status: true,
-    //     status1: false,
-    //     status2: false
-    //   });
-    // }
     this.setState({
       data: Data,
       status: true,

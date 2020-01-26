@@ -24,6 +24,16 @@ class TopRated extends React.Component {
   componentDidMount() {
     this.setState({ data: Data });
   }
+  carousel = React.createRef();
+
+  next = () => {
+    return this.carousel.next();
+  };
+
+  previous = () => {
+    this.carousel.prev();
+  };
+
   render() {
     const { data } = this.state;
     var settings = {
@@ -60,12 +70,16 @@ class TopRated extends React.Component {
         }
       ]
     };
+
     return (
-      <Carousel {...settings}>
+      <Carousel {...settings} ref={node => (this.carousel = node)}>
         {data
           ? data.map(card => (
               <div className="rated-section">
+                <button onClick={this.next}>asdasd</button>
                 <img className="rated-image" src={card.url} alt="pic" />
+                <Icon type="right" className="right-icons icons" />
+                <Icon type="left" className="left-icons icons" />
                 <div className="rated-detail">
                   <DetailCard>
                     <Place>

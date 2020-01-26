@@ -38,7 +38,7 @@
 }
 
 .rateIcon .anticon {
-  color: #FFC600
+  color: #ffc600;
 }
 
 .active {
@@ -65,5 +65,24 @@
 }
 
 .container-image .ant-carousel .slick-dots li button {
-  display: none
+  display: none;
+}
+
+.icons {
+  position: absolute;
+  top: 50%;
+  color: red;
+  font-size: 30px;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.right-icons {
+  right: 20px;
+}
+
+.left-icons {
+  left: 20px;
 }

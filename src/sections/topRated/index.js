@@ -1,8 +1,8 @@
-import React from 'react';
-import { Carousel } from 'antd';
-import { Icon } from 'antd';
+import React from "react";
+import { Carousel } from "antd";
+import { Icon } from "antd";
 
-import { Data } from './data';
+import { Data } from "./data";
 import {
   DetailCard,
   Location,
@@ -16,8 +16,9 @@ import {
   Rate,
   PriceSpan,
   LocationP
-} from '../../components/topRated';
-import './style.css';
+} from "../../components/topRated";
+import { Title, SubTitle, SubSection } from "../../components/popular";
+import "./style.css";
 
 class TopRated extends React.Component {
   state = { data: [] };
@@ -62,15 +63,20 @@ class TopRated extends React.Component {
         }
       ]
     };
+
     return (
       <>
+        <SubSection>
+          <Title>Check out some of our</Title>
+          <SubTitle>Featured Property</SubTitle>
+        </SubSection>
         <Carousel {...settings}>
           {data
             ? data.map(card => (
                 <div className="rated-section">
                   <img className="rated-image" src={card.url} alt="pic" />
                   <div className="rated-detail">
-                    <DetailCard className="detail-card">
+                    <DetailCard>
                       <Place>
                         <Name className="title">{card.name}</Name>
                         <Location className="title_icon">

@@ -78,8 +78,16 @@ class TopRated extends React.Component {
               <div className="rated-section">
                 <button onClick={this.next}>asdasd</button>
                 <img className="rated-image" src={card.url} alt="pic" />
-                <Icon type="right" className="right-icons icons" />
-                <Icon type="left" className="left-icons icons" />
+                <Icon
+                  type="right"
+                  className="right-icons icons"
+                  onClick={this.next}
+                />
+                <Icon
+                  type="left"
+                  className="left-icons icons"
+                  onClick={this.previous}
+                />
                 <div className="rated-detail">
                   <DetailCard>
                     <Place>

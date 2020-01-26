@@ -76,7 +76,6 @@ class TopRated extends React.Component {
         {data
           ? data.map(card => (
               <div className="rated-section">
-                <button onClick={this.next}>asdasd</button>
                 <img className="rated-image" src={card.url} alt="pic" />
                 <Icon
                   type="right"

@@ -5,6 +5,7 @@ import TopRated from './sections/topRated';
 import PopularSection from './sections/popular';
 import Valuation from './sections/valuation';
 import RecentSection from './sections/recent';
+import Footer from './sections/footer';
 import './App.css';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <PopularSection />
       <Valuation />
       <RecentSection />
+      <Footer />
     </div>
   );
 }

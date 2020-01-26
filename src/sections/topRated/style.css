@@ -10,22 +10,33 @@
   position: relative;
 }
 
-.ant-carousel .slick-prev {
-  position: absolute;
-  top: 50%;
-  z-index: 1;
-  left: 5px;
-}
-
 .slick-prev:before, .slick-next:before {
   font-size: 40px !important;
+  color: white;
+}
+
+.ant-carousel .slick-prev {
+  position: absolute;
+  z-index: 1;
+  left: 5px;
+  border: 3px solid white;
+  border-radius: 50%;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  color: #000000
 }
 
 .ant-carousel .slick-next {
   position: absolute;
-  top: 50%;
   z-index: 1;
   right: 40px;
+  border: 3px solid white;
+  border-radius: 50%;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  color: #000000
 }
 
 .rated-image {

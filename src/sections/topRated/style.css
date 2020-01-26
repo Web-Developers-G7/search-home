@@ -106,21 +106,3 @@
 .container-image .ant-carousel .slick-dots li button {
   display: none;
 }
-
-.icons {
-  position: absolute;
-  top: 50%;
-  font-size: 30px;
-  background-color: rgba(0, 0, 0, 0.2);
-  padding: 10px;
-  border-radius: 50%;
-  z-index: 10;
-}
-
-.right-icons {
-  right: 20px;
-}
-
-.left-icons {
-  left: 20px;
-}

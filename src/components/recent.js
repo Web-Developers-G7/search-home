@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Section = styled.section`
   height: 70%;
@@ -91,7 +91,7 @@ export const Name = styled.p`
   font-size: 20px;
   padding-left: 45px;
   letter-spacing: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   &:hover {
     color: gray;

@@ -47,20 +47,20 @@
   }
 }
 
-.ant-carousel .slick-dots-bottom {
+.container .ant-carousel .slick-dots-bottom {
   bottom:-15px;
 }
 
-.slick-dots li button:before {
+.container .slick-dots li button:before {
   display: none;
 }
 
-.ant-carousel .slick-dots li button {
+.container .ant-carousel .slick-dots li button {
   color: gray;
   background: gray;
   opacity: 1;
 }
 
-.ant-carousel .slick-dots li.slick-active button {
+.container .ant-carousel .slick-dots li.slick-active button {
   background: #5234e6;
 }

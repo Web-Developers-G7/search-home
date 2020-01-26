@@ -1,9 +1,8 @@
-import React from 'react';
-import { Carousel } from 'antd';
-import Slider from 'react-slick';
-import { Icon } from 'antd';
+import React from "react";
+import { Carousel } from "antd";
+import { Icon } from "antd";
 
-import { Data } from './data';
+import { Data } from "./data";
 import {
   DetailCard,
   Location,
@@ -17,8 +16,8 @@ import {
   Rate,
   PriceSpan,
   LocationP
-} from '../../components/topRated';
-import './style.css';
+} from "../../components/topRated";
+import "./style.css";
 
 class TopRated extends React.Component {
   state = { data: [] };
@@ -30,7 +29,7 @@ class TopRated extends React.Component {
     var settings = {
       dots: true,
       infinite: false,
-      fade:true,
+      fade: true,
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,

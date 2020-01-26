@@ -40,6 +40,7 @@ class TopRated extends React.Component {
     const { data } = this.state;
     var settings = {
       dots: true,
+      arrows: true,
       infinite: false,
       fade: true,
       speed: 500,

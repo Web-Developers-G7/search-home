@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Section = styled.section`
   height: 70%;
@@ -14,6 +14,7 @@ export const SubSection = styled.div`
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  margin: 28px 0;
 `;
 export const Title = styled.span`
   color: #6449e7;
@@ -122,7 +123,7 @@ export const Name = styled.p`
   font-size: 20px;
   padding-left: 45px;
   letter-spacing: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   &:hover {
     color: gray;

@@ -17,6 +17,7 @@ import {
   PriceSpan,
   LocationP
 } from "../../components/topRated";
+import { Title, SubTitle, SubSection } from "../../components/popular";
 import "./style.css";
 
 class TopRated extends React.Component {
@@ -62,15 +63,20 @@ class TopRated extends React.Component {
         }
       ]
     };
+
     return (
       <>
+        <SubSection>
+          <Title>Check out some of our</Title>
+          <SubTitle>Featured Property</SubTitle>
+        </SubSection>
         <Carousel {...settings}>
           {data
             ? data.map(card => (
                 <div className="rated-section">
                   <img className="rated-image" src={card.url} alt="pic" />
                   <div className="rated-detail">
-                    <DetailCard className="detail-card">
+                    <DetailCard>
                       <Place>
                         <Name className="title">{card.name}</Name>
                         <Location className="title_icon">

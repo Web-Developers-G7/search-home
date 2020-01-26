@@ -1,9 +1,14 @@
 import styled from 'styled-components';
 export const DetailCard = styled.div`
-  height: 200px;
+  height: 280px;
+  width: 450px;
+  background-color: rgba(255, 255, 255, 0.849);
+  border: 1px solid white;
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
 `;
 export const Place = styled.div`
-  height: 41%;
+  height: 35%;
 `;
 export const Name = styled.p`
   color: black;
@@ -30,7 +35,7 @@ export const Details = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 47%;
+  height: 40%;
   border-bottom: 1px solid gray;
 `;
 export const TopDetail = styled.div`
@@ -52,7 +57,7 @@ export const Price = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 47%;
+  height: 25%;
 `;
 export const Rate = styled.div``;
 export const PriceSpan = styled.span``;

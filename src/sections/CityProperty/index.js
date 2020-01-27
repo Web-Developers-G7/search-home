@@ -9,8 +9,6 @@ export class CityProperty extends Component {
     var settings = {
       dots: true,
       arrows: true,
-      infinite: false,
-      fade: true,
       speed: 500,
       slidesToShow: 3,
       slidesToScroll: 1,

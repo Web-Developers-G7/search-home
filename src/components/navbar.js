@@ -20,12 +20,18 @@ export const Img = styled.img`
 export const Ul = styled.ul`
   display: flex;
   justify-content: space-between;
-  width: 30vw;
+  align-items: flex-end;
   padding: 0;
 `;
 export const Li = styled.li`
   list-style: none;
   display: inline-block;
+  margin-left: 30px;
+  font-size: 16px;
+  padding: 10px 0;
+  &:hover {
+    background-color: #bbb;
+  }
 `;
 
 export const Button = styled.button`
@@ -117,4 +123,10 @@ export const SearchBtn = styled(Button)`
   // font-size: 15px;
   font-weight: 400;
   margin: 0;
+`;
+
+export const Link = styled.a`
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
 `;

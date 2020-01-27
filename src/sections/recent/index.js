@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { Carousel } from 'antd';
+import React, { Component } from "react";
+import { Carousel } from "antd";
 import {
   Section,
   Title,
@@ -7,10 +7,10 @@ import {
   SubSection,
   CardSection,
   MainSection
-} from '../../components/recent';
-import { Card } from './card';
-import { Data } from './data';
-import './style.css';
+} from "../../components/recent";
+import { Card } from "./card";
+import { Data } from "./data";
+import "./style.css";
 
 class Recent extends Component {
   state = { data: [] };
@@ -55,7 +55,7 @@ class Recent extends Component {
       ]
     };
     return (
-      <Section>
+      <Section id="recent">
         <SubSection>
           <Title>Browse some of our</Title>
           <SubTitle>Recent Properties</SubTitle>
@@ -77,7 +77,6 @@ class Recent extends Component {
                 />
               ))}
             </Carousel>
-
           </CardSection>
         </MainSection>
       </Section>

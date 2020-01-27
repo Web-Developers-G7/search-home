@@ -15,7 +15,8 @@ import {
   Option,
   Header,
   ContainerBottom,
-  SearchBtn
+  SearchBtn,
+  Link
 } from "../../components/navbar";
 import logo from "../../images/logo-blue.png";
 
@@ -27,10 +28,18 @@ const HeaderSection = () => {
           <Img src={logo} alt="logo-img" />
         </Container>
         <Ul>
-          <Li>aasd</Li>
-          <Li>aasd</Li>
-          <Li>aasd</Li>
-          <Li>aasd</Li>
+          <Li>
+            <Link href="#featured">Featured Property</Link>
+          </Li>
+          <Li>
+            <Link href="#popular">Popular Properties</Link>
+          </Li>
+          <Li>
+            <Link href="#recent">Recent Properties</Link>
+          </Li>
+          <Li>
+            <Link href="#consultation">Consultation</Link>
+          </Li>
         </Ul>
         <Button>add property</Button>
       </Nav>

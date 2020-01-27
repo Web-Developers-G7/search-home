@@ -65,7 +65,7 @@ class TopRated extends React.Component {
     };
 
     return (
-      <>
+      <div id="featured">
         <SubSection>
           <Title>Check out some of our</Title>
           <SubTitle>Featured Property</SubTitle>
@@ -121,7 +121,7 @@ class TopRated extends React.Component {
               ))
             : null}
         </Carousel>
-      </>
+      </div>
     );
   }
 }

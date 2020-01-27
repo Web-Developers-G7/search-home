@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import { Form, Select, Input, Button } from 'antd';
-import './style.css';
+import React, { Component } from "react";
+import { Form, Select, Input, Button } from "antd";
+import "./style.css";
 
 const { Option } = Select;
 
@@ -9,7 +9,7 @@ class Consultation extends Component {
     e.preventDefault();
     this.props.form.validateFields((err, values) => {
       if (!err) {
-        console.log('Received values of form: ', values);
+        console.log("Received values of form: ", values);
       }
     });
   };
@@ -18,7 +18,7 @@ class Consultation extends Component {
     const { getFieldDecorator } = this.props.form;
 
     return (
-      <div className="consult">
+      <div className="consult" id="consultation">
         <div className="consult_title">
           <span className="consult_mainTitle">Get a Free Consultation</span>
           <span className="consult_subTitle">
@@ -32,35 +32,35 @@ class Consultation extends Component {
           <Form onSubmit={this.handleSubmit} className="consult_form">
             <div className="consult_personDetail">
               <Form.Item>
-                {getFieldDecorator('Your Name', {
+                {getFieldDecorator("Your Name", {
                   rules: [
-                    { required: true, message: 'Please input your username!' }
+                    { required: true, message: "Please input your username!" }
                   ]
                 })(<Input placeholder="Your Name" />)}
               </Form.Item>
               <Form.Item>
-                {getFieldDecorator('Your Email', {
+                {getFieldDecorator("Your Email", {
                   rules: [
                     {
-                      type: 'email',
-                      message: 'The input is not valid E-mail!'
+                      type: "email",
+                      message: "The input is not valid E-mail!"
                     },
                     {
                       required: true,
-                      message: 'Please input your E-mail!'
+                      message: "Please input your E-mail!"
                     }
                   ]
                 })(<Input placeholder="Your Email" />)}
               </Form.Item>
               <Form.Item>
-                {getFieldDecorator('Your Phone Number', {
+                {getFieldDecorator("Your Phone Number", {
                   rules: [
                     {
-                      type: 'number'
+                      type: "number"
                     },
                     {
                       required: true,
-                      message: 'Please input your Phone!'
+                      message: "Please input your Phone!"
                     }
                   ]
                 })(<Input placeholder="Your Phone Number" />)}
@@ -68,9 +68,9 @@ class Consultation extends Component {
             </div>
             <div className="consult_cityDetail">
               <Form.Item>
-                {getFieldDecorator('city', {
+                {getFieldDecorator("city", {
                   rules: [
-                    { required: true, message: 'Please select your city!' }
+                    { required: true, message: "Please select your city!" }
                   ]
                 })(
                   <Select
@@ -85,9 +85,9 @@ class Consultation extends Component {
                 )}
               </Form.Item>
               <Form.Item>
-                {getFieldDecorator('property', {
+                {getFieldDecorator("property", {
                   rules: [
-                    { required: true, message: 'Please select your property!' }
+                    { required: true, message: "Please select your property!" }
                   ]
                 })(
                   <Select
@@ -112,5 +112,5 @@ class Consultation extends Component {
     );
   }
 }
-const SignIn = Form.create({ name: 'sign in' })(Consultation);
+const SignIn = Form.create({ name: "sign in" })(Consultation);
 export default SignIn;

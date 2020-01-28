@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import {
   Section,
   Title,
@@ -8,9 +8,9 @@ import {
   MenueSection,
   Span,
   MainSection
-} from '../../components/popular';
-import { Card } from './card';
-import { Data } from './data';
+} from "../../components/popular";
+import { Card } from "./card";
+import { Data } from "./data";
 
 class Popular extends Component {
   state = { data: [], status: false, saleStatus: false, rentStatus: false };
@@ -31,7 +31,7 @@ class Popular extends Component {
     });
   };
   forSale = () => {
-    const forSale = Data.filter(card => card.type === 'For Sale');
+    const forSale = Data.filter(card => card.type === "For Sale");
     this.setState({
       data: forSale,
       saleStatus: true,
@@ -41,7 +41,7 @@ class Popular extends Component {
   };
 
   forRent = () => {
-    const forRent = Data.filter(card => card.type === 'For Rent');
+    const forRent = Data.filter(card => card.type === "For Rent");
     this.setState({
       data: forRent,
       rentStatus: true,
@@ -52,7 +52,7 @@ class Popular extends Component {
   render() {
     const { data, saleStatus, rentStatus, status } = this.state;
     return (
-      <Section className={status ? 'activeAll' : 'notActiveAll'}>
+      <Section className={status ? "activeAll" : "notActiveAll"} id="popular">
         <SubSection>
           <Title>Find rental properties anywhere</Title>
           <SubTitle>Discover Popular Properties</SubTitle>
@@ -60,7 +60,7 @@ class Popular extends Component {
         <MainSection>
           <MenueSection>
             <Span
-              className={status ? 'active' : 'notActive'}
+              className={status ? "active" : "notActive"}
               onClick={this.forAll}
             >
               All Property

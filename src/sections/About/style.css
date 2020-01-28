@@ -1,0 +1,204 @@
+.about {
+  height: 470px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.about_title {
+  display: flex;
+  flex-direction: column;
+}
+
+.about_allTitle {
+  display: flex;
+  flex-direction: column
+}
+
+.about_mainTitle {
+  font-size: 16px;
+  color: #6449e7;
+  text-align: left;
+}
+
+.about_subTitle {
+  margin-bottom: 20px;
+  font-size: 30px;
+  text-transform: capitalize;
+  text-align: left;
+}
+
+.about_paragraph {
+  line-height: 1.8;
+  font-size: 15px;
+  color: #888;
+  max-width: 520px;
+  width: 95%;
+  text-align: left;
+}
+
+.about_icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.about_iconsContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.detailed_icon {
+  color: #333;
+  font-weight: 500;
+  font-size: 30px;
+  padding: 10px 0 10px 0;
+}
+
+.detailed_contentIcon {
+  color: #333;
+  font-size: 17px;
+}
+
+.about_cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about_card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.about_service {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  background-color: #6449e7;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.service_title {
+  color: #c3c1c0;
+  font-weight: 100;
+  font-size: 18px;
+}
+
+.service_detail {
+  color: white;
+}
+
+.about_support {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 15px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 11px 0px rgba(38, 59, 94, 0.12);
+  border-radius: 5px;
+  text-align: center;
+}
+
+.support_title {
+  color: black;
+  font-weight: 100;
+  font-size: 18px;
+}
+
+.support_detail {
+  color: gray;
+}
+
+.about_finance {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 11px 0px rgba(38, 59, 94, 0.12);
+  border-radius: 5px;
+  text-align: center;
+}
+
+.about_client {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  margin-left: 15px;
+  background-color: #FA6742;
+  border-radius: 5px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .about_subTitle {
+    font-size: 20px;
+  }
+  .about_paragraph {
+    line-height: 1.8;
+    font-size: 15px;
+    color: #888;
+    max-width: 500px;
+    width: 95%;
+    padding-left: 20px;
+  }
+  .about_mainTitle {
+    font-size: 16px;
+    color: #6449e7;
+    padding-left: 20px;
+  }
+  .about_subTitle {
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-transform: capitalize;
+    padding-left: 20px;
+  }
+  .about_icons {
+    margin-top: 0;
+  }
+  .detailed_icon {
+    padding: 0;
+    font-size: 15px;
+  }
+  .detailed_contentIcon {
+    font-size: 13px;
+  }
+  .service_title, .service_detail, .support_detail, .support_title {
+    font-size: 15px;
+  }
+  .about {
+    display: block;
+    height: 100%;
+    margin-bottom: 20px;
+  }
+  .about_cards {
+    padding-top: 20px;
+  }
+  .about_card {
+    display: block;
+  }
+  .about_client, .about_finance, .about_service, .about_support {
+    width: 95%;
+    text-align: center;
+    margin-left: 20px;
+  }
+  .about_finance {
+    margin-bottom: 15px;
+  }
+}

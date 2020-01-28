@@ -6,6 +6,7 @@ import PopularSection from './sections/popular';
 import Valuation from './sections/valuation';
 import RecentSection from './sections/recent';
 import Consultation from './sections/consultation';
+import About from './sections/About';
 import Footer from './sections/footer';
 import './App.css';
 
@@ -18,6 +19,7 @@ function App() {
       <Valuation />
       <RecentSection />
       <Consultation />
+      <About />
       <Footer />
     </div>
   );

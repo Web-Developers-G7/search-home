@@ -13,7 +13,7 @@ import { Card } from './card';
 import { Data } from './data';
 
 class Popular extends Component {
-  state = { data: [], status: false, status1: false, status2: false };
+  state = { data: [], status: false, saleStatus: false, rentStatus: false };
 
   componentDidMount() {
     if (Data.length >= 3) {
@@ -26,16 +26,16 @@ class Popular extends Component {
     this.setState({
       data: Data,
       status: true,
-      status1: false,
-      status2: false
+      saleStatus: false,
+      rentStatus: false
     });
   };
   forSale = () => {
     const forSale = Data.filter(card => card.type === 'For Sale');
     this.setState({
       data: forSale,
-      status1: true,
-      status2: false,
+      saleStatus: true,
+      rentStatus: false,
       status: false
     });
   };
@@ -44,13 +44,13 @@ class Popular extends Component {
     const forRent = Data.filter(card => card.type === 'For Rent');
     this.setState({
       data: forRent,
-      status2: true,
-      status1: false,
+      rentStatus: true,
+      saleStatus: false,
       status: false
     });
   };
   render() {
-    const { data, status1, status2, status } = this.state;
+    const { data, saleStatus, rentStatus, status } = this.state;
     return (
       <Section className={status ? 'activeAll' : 'notActiveAll'}>
         <SubSection>
@@ -66,13 +66,13 @@ class Popular extends Component {
               All Property
             </Span>
             <Span
-              className={status1 ? 'active' : 'notActive'}
+              className={saleStatus ? 'active' : 'notActive'}
               onClick={this.forSale}
             >
               For Sale
             </Span>
             <Span
-              className={status2 ? 'active' : 'notActive'}
+              className={rentStatus ? 'active' : 'notActive'}
               onClick={this.forRent}
             >
               For Rent
